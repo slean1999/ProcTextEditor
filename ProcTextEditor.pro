@@ -17,11 +17,13 @@ SOURCES += main.cpp\
     basewidget.cpp \
     ccolormapwidget.cpp \
     cpatternwidget.cpp \
-    cpropertywidget.cpp
+    cpropertywidget.cpp \
+    cwarpwidget.cpp
 
 HEADERS  += mainwindow.h \
     basewidget.h \
     BaseDef.h \
     ccolormapwidget.h \
     cpatternwidget.h \
-    cpropertywidget.h
+    cpropertywidget.h \
+    cwarpwidget.h

@@ -1,6 +1,7 @@
 #ifndef CCOLORWIDGET_H
 #define CCOLORWIDGET_H
 #include <QDoubleSpinBox>
+#include <QGridLayout>
 #include "basewidget.h"
 #include "BaseDef.h"
 
@@ -20,7 +21,8 @@ private:
     void                DataToString();
 private:
     std::list<_Color>                   m_lsData;
-    std::vector<QDoubleSpinBox*>        m_vSpinBox;
+    std::vector<QDoubleSpinBox*>        m_vpSpinBox;
+    QGridLayout                         m_gridLayout;
 };
 
 #endif // CCOLORWIDGET_H

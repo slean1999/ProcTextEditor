@@ -3,11 +3,13 @@
 
 typedef struct tag_Color
 {
+    float fValue;
     float fR;
     float fG;
     float fB;
     float fA;
     float fWeight;
+
 }_Color;
 
 typedef struct tag_Property
@@ -22,6 +24,17 @@ typedef struct tag_Property
     float fFalloff;
 }_Property;
 
+typedef struct tag_Turb
+{
+    float fTurbX;
+    float fTurbY;
+    float fTurbZ;
+    float fLambda;
+    float fOctave;
+    float fOmega;
+}_Turb;
+
+
 enum ePattern
 {
     eGRANITE_PATTERN = 0,
@@ -30,6 +43,11 @@ enum ePattern
 enum eWaveType
 {
     eRAMP_WAVE = 0,
+};
+
+enum eWarpType
+{
+    eTRANSFORM_WARP = 0,
 };
 
 #endif // BASEDEF_H
