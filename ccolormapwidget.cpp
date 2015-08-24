@@ -2,16 +2,24 @@
 
 CColorMapWidget::CColorMapWidget(QWidget* parent):BaseWidget(parent)
 {
+
 }
 
 
 void CColorMapWidget::SetValueString(const QString &strValue)
 {
-
+    QStringList list = strValue.split("\n");
+    foreach (auto value, list)
+    {
+        _Color color = ParseString(value);
+        m_lsData.push_back(color);
+    }
+    CreateSpinBox();
 }
 
 QString CColorMapWidget::GetValueString()
 {
+
     return QString("");
 }
 
@@ -90,4 +98,25 @@ void CColorMapWidget::DelteRowDate(int nRowIndex)
         }
         m_lsData.erase(iter);
     }
+}
+
+
+_Color CColorMapWidget::ParseString(const QString &strValue)
+{
+    _Color colorValue;
+    memset(&colorValue, 0, sizeof(_Color));
+    int nLeft = strValue.indexOf("\"");
+    QString strRight = strValue.right(strValue.length() - nLeft - 1);
+    int nRight = strRight.indexOf("\"");
+    QString strMid = strValue.mid(nLeft,nRight);
+    QStringList value = strMid.split(" ");
+    if (value.size() < 6)
+        return colorValue;
+    colorValue.fValue   = value[0].toDouble();
+    colorValue.fR       = value[1].toDouble();
+    colorValue.fG       = value[2].toDouble();
+    colorValue.fB       = value[3].toDouble();
+    colorValue.fA       = value[4].toDouble();
+    colorValue.fWeight  = value[5].toDouble();
+    return colorValue;
 }

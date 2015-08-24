@@ -11,14 +11,14 @@ public:
     CColorMapWidget(QWidget* parent = 0);
     virtual void    SetValueString(const QString& strValue);
     virtual QString GetValueString();
-    virtual void    CreateSpinBox();
-
+    virtual void    CreateSpinBox();    
 
     void                AddRowData(int nRowIndex, _Color* pData);
     void                DelteRowDate(int nRowIndex);
 private:
     void                StringToData();
     void                DataToString();
+    _Color              ParseString(const QString& strValue);
 private:
     std::list<_Color>                   m_lsData;
     std::vector<QDoubleSpinBox*>        m_vpSpinBox;
