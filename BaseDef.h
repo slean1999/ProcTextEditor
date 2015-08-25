@@ -38,16 +38,14 @@ typedef struct tag_Turb
 enum ePattern
 {
     eGRANITE_PATTERN = 0,
+    ePattern_MAX,
+
+    eRAMP_WAVE,
+    eWave_MAX,
+
+    eTRANSFORM_WARP,
+    eAll_MAX,
 };
 
-enum eWaveType
-{
-    eRAMP_WAVE = 0,
-};
-
-enum eWarpType
-{
-    eTRANSFORM_WARP = 0,
-};
 
 #endif // BASEDEF_H

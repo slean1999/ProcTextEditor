@@ -12,20 +12,23 @@ public:
     virtual QString GetValueString();
     virtual void    CreateSpinBox();
 
+protected:
+    QString GetStringValue(const QString &strValue);
+    bool    ParseVectorValue(const QString& strValue, float value[3]);
 private:
     void                StringToData();
     void                DataToString();
 
 private:
     _Property           m_property;
-    QDoubleSpinBox*     m_pDiffuseSpin;
-    QDoubleSpinBox*     m_pBrillanceSpin;
-    QDoubleSpinBox*     m_pSpecSpin;
-    QDoubleSpinBox*     m_pRoughSpin;
-    QDoubleSpinBox*     m_pvAmibentSpin[3];
-    QDoubleSpinBox*     m_pvRelfmaxSpin[3];
-    QDoubleSpinBox*     m_pvRelfminSpin[3];
-    QDoubleSpinBox*     m_pFalloffSpin;
+    QDoubleSpinBox      m_pDiffuseSpin;
+    QDoubleSpinBox      m_pBrillanceSpin;
+    QDoubleSpinBox      m_pSpecSpin;
+    QDoubleSpinBox      m_pRoughSpin;
+    QDoubleSpinBox      m_pvAmibentSpin[3];
+    QDoubleSpinBox      m_pvRelfmaxSpin[3];
+    QDoubleSpinBox      m_pvRelfminSpin[3];
+    QDoubleSpinBox      m_pFalloffSpin;
 
 };
 

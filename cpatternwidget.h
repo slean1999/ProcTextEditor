@@ -17,14 +17,16 @@ public:
     virtual void    CreateSpinBox();
 private:
     ePattern        m_Pattern;
-    eWaveType       m_WavePattern;
+    ePattern        m_WavePattern;
     float           m_fFrenqucy;
     float           m_fPhase;
+    QString         GetStringValue(const QString& strValue);
+    int             GetPatternType(const QString& strValue);
 private:
-    QDoubleSpinBox* m_pFrenqucySpin;
-    QDoubleSpinBox* m_pPhaseSpin;
-    QComboBox*      m_pPatternComb;
-    QComboBox*      m_pWaveComb;
+    QDoubleSpinBox  m_FrenqucySpin;
+    QDoubleSpinBox  m_PhaseSpin;
+    QComboBox       m_PatternComb;
+    QComboBox       m_WaveComb;
 signals:
 
 public slots:
