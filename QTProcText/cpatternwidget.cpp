@@ -28,20 +28,46 @@ CPatternWidget::CPatternWidget(QWidget *parent) :
     }
 }
 
-void CPatternWidget::SetValueString(const QDomElement& colorDomEle)
+void CPatternWidget::SetValueString(xml_document<>& doc,xml_node<>* pSubnode)
 {
-//     QStringList list = strValue.split("\n");
-//     QString strPatternType  = GetStringValue(list[0]);
-//     QString strWaveType     = GetStringValue(list[1]);
-//     QString strFrenqucy     = GetStringValue(list[2]);
-//     QString strPhase        = GetStringValue(list[3]);
-// 
-//     m_Pattern       = (ePattern)GetPatternType(strPatternType);
-//     m_WavePattern   = (ePattern)GetPatternType(strWaveType);
-//     m_fFrenqucy     = strFrenqucy.toFloat();
-//     m_fPhase        = strPhase.toFloat();
+	xml_attribute<>* pAtti = NULL;
+	if (strcmp(pSubnode->name(),"patterntype")== 0)
+	{
+		pAtti = pSubnode->first_attribute();
+		int nIndex = 0;
+		std::string str(pAtti->value());
+		m_Pattern = (ePattern)nIndex;
+	}
 
-    CreateSpinBox();
+	pSubnode = pSubnode->next_sibling();
+	if (strcmp(pSubnode->name(),"patternWaveType")== 0)
+	{
+		pAtti = pSubnode->first_attribute();
+		int nIndex = 0;
+		std::string str(pAtti->value());
+		m_WavePattern = (ePattern)nIndex;
+		// 			WaveIndex(str, nIndex,1);
+		// 			pPattern->wavetype = (ePatternWaveType)nIndex;	
+	}
+
+	pSubnode = pSubnode->next_sibling();
+	if (strcmp(pSubnode->name(),"frenqucy")== 0)
+	{
+		pAtti = pSubnode->first_attribute();
+		m_fFrenqucy = atof(pAtti->value());	
+	}
+
+	pSubnode = pSubnode->next_sibling();
+	if (strcmp(pSubnode->name(),"phase")== 0)
+	{
+		pAtti = pSubnode->first_attribute();
+		m_fPhase = atof(pAtti->value());	
+	}
+
+	m_PatternComb.setCurrentIndex(m_Pattern);
+	m_WaveComb.setCurrentIndex(m_WavePattern);
+	m_FrenqucySpin.setValue(m_fFrenqucy);
+	m_PhaseSpin.setValue(m_fPhase);
 }
 
 QString CPatternWidget::GetValueString()

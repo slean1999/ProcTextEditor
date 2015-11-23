@@ -83,9 +83,6 @@
     <ClCompile Include="GeneratedFiles\Release\moc_cwarpwidget.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="WidgetCreator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ccolorframe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -102,6 +99,24 @@
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_clayerframe.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="cctrlframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_cctrlframe.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_cctrlframe.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="cpatternframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_cpatternframe.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_cpatternframe.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
   </ItemGroup>
@@ -130,6 +145,12 @@
     <CustomBuild Include="clayerframe.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="cctrlframe.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="cpatternframe.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_qtproctext.h">
@@ -144,10 +165,10 @@
     <ClInclude Include="cpropertywidget.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="WidgetCreator.h">
+    <ClInclude Include="inc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inc.h">
+    <ClInclude Include="IInterfaceDef.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

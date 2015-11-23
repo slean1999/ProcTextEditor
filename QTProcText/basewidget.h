@@ -4,12 +4,15 @@
 #include <QWidget>
 #include <QDoubleSpinBox>
 #include "inc.h"
-class BaseWidget : public QWidget
+#include "IInterfaceDef.h"
+using namespace rapidxml; 
+
+class BaseWidget : public QWidget//, public IXMLFileParse
 {
     Q_OBJECT
 public:
     explicit BaseWidget(QWidget *parent = 0);    
-    virtual void SetValueString(const QDomElement& colorDomEle) = 0;
+    virtual void SetValueString(xml_document<>& doc,xml_node<>* root) = 0;
     virtual QString GetValueString() = 0;
     virtual void CreateSpinBox() = 0;
 

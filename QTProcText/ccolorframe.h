@@ -11,12 +11,12 @@ class CColorFrame : public BaseWidget
 public:
     CColorFrame(QWidget *parent);
     ~CColorFrame();
-    void            SetValueString(const QDomElement& colorDomEle);
+    void            SetValueString(xml_document<>& doc,xml_node<>* root);
     QString         GetValueString();
     void            CreateSpinBox();
 private:
     int             m_nColorType;// pattern or color
-    QDomElement     m_Elecolortype;
+    /*QDomElement     m_Elecolortype;*/
     QVBoxLayout     m_VLayout;
 
 };

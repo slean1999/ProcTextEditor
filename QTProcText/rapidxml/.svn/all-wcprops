@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/NLEEngine/!svn/ver/408/TPFrame/CGSDK/CGDemoTexturePlugIn/rapidxml
+END
+license.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/NLEEngine/!svn/ver/408/TPFrame/CGSDK/CGDemoTexturePlugIn/rapidxml/license.txt
+END
+manual.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/NLEEngine/!svn/ver/408/TPFrame/CGSDK/CGDemoTexturePlugIn/rapidxml/manual.html
+END
+rapidxml_iterators.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/NLEEngine/!svn/ver/408/TPFrame/CGSDK/CGDemoTexturePlugIn/rapidxml/rapidxml_iterators.hpp
+END
+rapidxml_print.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/NLEEngine/!svn/ver/408/TPFrame/CGSDK/CGDemoTexturePlugIn/rapidxml/rapidxml_print.hpp
+END
+rapidxml.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/NLEEngine/!svn/ver/408/TPFrame/CGSDK/CGDemoTexturePlugIn/rapidxml/rapidxml.hpp
+END
+rapidxml_utils.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/NLEEngine/!svn/ver/408/TPFrame/CGSDK/CGDemoTexturePlugIn/rapidxml/rapidxml_utils.hpp
+END

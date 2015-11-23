@@ -1,4 +1,6 @@
-#include <QtXml/QDomDocument>
-#include <QFile>
+#pragma once
+#include "rapidxml/rapidxml.hpp"   
+#include "rapidxml/rapidxml_utils.hpp"   
+#include "rapidxml/rapidxml_print.hpp" 
 
-#pragma comment(lib,"Qt5Xmld.lib")
+

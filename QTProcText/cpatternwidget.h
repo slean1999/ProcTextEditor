@@ -12,7 +12,7 @@ class CPatternWidget : public BaseWidget
     Q_OBJECT
 public:
     explicit CPatternWidget(QWidget *parent = 0);
-    virtual void    SetValueString(const QDomElement& colorDomEle);
+    virtual void    SetValueString(xml_document<>& doc,xml_node<>* root);
     virtual QString GetValueString();
     virtual void    CreateSpinBox();
 private:

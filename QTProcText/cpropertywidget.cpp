@@ -6,7 +6,7 @@ CPropertyWidget::CPropertyWidget(QWidget* parent)
     memset(&m_property,0,sizeof(m_property));
 }
 
-void CPropertyWidget::SetValueString(const QDomElement& colorDomEle)
+void CPropertyWidget::SetValueString(xml_document<>& doc,xml_node<>* root)
 {
 //     QStringList list = strValue.split("\n");
 //     QString strDiffuse              = GetStringValue(list[0]);

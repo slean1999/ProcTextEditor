@@ -12,12 +12,12 @@ class CLayerFrame : public BaseWidget
 public:
     CLayerFrame(QWidget *parent);
     ~CLayerFrame();
-    void            SetValueString(const QDomElement& colorDomEle);
+    void            SetValueString(xml_document<>& doc,xml_node<>* root);
     QString         GetValueString();
     void            CreateSpinBox();
 private:
     QVBoxLayout     m_VLayout;
-    QDomElement     m_Elecolortype;
+//    QDomElement     m_Elecolortype;
     
 };
 

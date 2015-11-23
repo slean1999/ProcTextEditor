@@ -6,7 +6,7 @@ CColorMapWidget::CColorMapWidget(QWidget* parent):BaseWidget(parent)
 }
 
 
-void CColorMapWidget::SetValueString(const QDomElement& colorDomEle)
+void CColorMapWidget::SetValueString(xml_document<>& doc,xml_node<>* root)
 {
 //     QStringList list = strValue.split("\n");
 //     foreach (auto value, list)
