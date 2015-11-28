@@ -12,15 +12,7 @@ int main(int argc, char *argv[])
     QFile file("c:/material.xml");
     file.open(QFile::ReadOnly | QFile::Text);
     
-    QDomDocument document;
-    QString error;  
-    int row = 0, column = 0;  
-    QString ttt("<colortype type=\"pattern\"/>");
-    document.setContent(ttt, false, &error, &row, &column);
     
-    QDomElement root = document.documentElement();     
-
-    QString root_tag_name = root.tagName();
 
 
 
