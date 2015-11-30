@@ -22,21 +22,21 @@ void CPatternframe::SetValueString( xml_document<>& doc,xml_node<>* root )
 	{
 		xml_node<>* pSubnode = root->first_node();
 		CPatternWidget* pPatternWidget = new CPatternWidget(this);
-		pPatternWidget->SetValueString(doc, root);
-		m_vLayout.addWidget(pPatternWidget);
+		pPatternWidget->SetValueString(doc, pSubnode);
+		m_VLayout.addWidget(pPatternWidget);
 		while (pSubnode)
 		{
 			if (strcmp(pSubnode->name(),"warp")== 0)
 			{
 				CWarpWidget* pWarpWidget = new CWarpWidget(this);
 				pWarpWidget->SetValueString(doc, root);
-				m_vLayout.addWidget(pWarpWidget);
+				m_VLayout.addWidget(pWarpWidget);
 			}
 			else if (strcmp(pSubnode->name(),"colormap")== 0)
 			{
 				CColorMapWidget* pColorMap = new CColorMapWidget(this);
 				pColorMap->SetValueString(doc, root);
-				m_vLayout.addWidget(pColorMap);
+				m_VLayout.addWidget(pColorMap);
 			}
 			else if (strcmp(pSubnode->name(),"vals")== 0)
 			{
@@ -45,10 +45,9 @@ void CPatternframe::SetValueString( xml_document<>& doc,xml_node<>* root )
 // 				m_vLayout.addWidget(pWarpWidget);
 			}
 			pSubnode = pSubnode->next_sibling();
-		}
-
-		
+		}		
 	}
+    setLayout(&m_VLayout);
 }
 
 QString CPatternframe::GetValueString()

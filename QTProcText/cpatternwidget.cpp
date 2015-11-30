@@ -31,7 +31,7 @@ CPatternWidget::CPatternWidget(QWidget *parent) :
 void CPatternWidget::SetValueString(xml_document<>& doc,xml_node<>* pSubnode)
 {
 	xml_attribute<>* pAtti = NULL;
-	if (strcmp(pSubnode->name(),"patterntype")== 0)
+	if (pSubnode && strcmp(pSubnode->name(),"patterntype")== 0)
 	{
 		pAtti = pSubnode->first_attribute();
 		int nIndex = 0;
@@ -40,7 +40,7 @@ void CPatternWidget::SetValueString(xml_document<>& doc,xml_node<>* pSubnode)
 	}
 
 	pSubnode = pSubnode->next_sibling();
-	if (strcmp(pSubnode->name(),"patternWaveType")== 0)
+	if (pSubnode && strcmp(pSubnode->name(),"patternWaveType")== 0)
 	{
 		pAtti = pSubnode->first_attribute();
 		int nIndex = 0;
@@ -49,25 +49,21 @@ void CPatternWidget::SetValueString(xml_document<>& doc,xml_node<>* pSubnode)
 		// 			WaveIndex(str, nIndex,1);
 		// 			pPattern->wavetype = (ePatternWaveType)nIndex;	
 	}
-
 	pSubnode = pSubnode->next_sibling();
-	if (strcmp(pSubnode->name(),"frenqucy")== 0)
+	if (pSubnode && strcmp(pSubnode->name(),"frenqucy")== 0)
 	{
 		pAtti = pSubnode->first_attribute();
 		m_fFrenqucy = atof(pAtti->value());	
 	}
 
 	pSubnode = pSubnode->next_sibling();
-	if (strcmp(pSubnode->name(),"phase")== 0)
+	if (pSubnode && strcmp(pSubnode->name(),"phase")== 0)
 	{
 		pAtti = pSubnode->first_attribute();
 		m_fPhase = atof(pAtti->value());	
 	}
 
-	m_PatternComb.setCurrentIndex(m_Pattern);
-	m_WaveComb.setCurrentIndex(m_WavePattern);
-	m_FrenqucySpin.setValue(m_fFrenqucy);
-	m_PhaseSpin.setValue(m_fPhase);
+	CreateSpinBox();
 }
 
 QString CPatternWidget::GetValueString()
@@ -81,10 +77,11 @@ void CPatternWidget::CreateSpinBox()
     m_WaveComb.setCurrentIndex(m_WavePattern);
     m_FrenqucySpin.setValue(m_fFrenqucy);
     m_PhaseSpin.setValue(m_fPhase);
-    //m_FrenqucySpin.setAlignment(Qt::AlignCenter);
-    //m_gridLayout.addWidget(&m_FrenqucySpin,i,j);
-    //m_PhaseSpin.setAlignment(Qt::AlignCenter);
-    //m_gridLayout.addWidget(&m_PhaseSpin,i,j);
+    m_HLayout.addWidget(&m_PatternComb);
+    m_HLayout.addWidget(&m_WaveComb);
+    m_HLayout.addWidget(&m_FrenqucySpin);
+    m_HLayout.addWidget(&m_PhaseSpin);
+    setLayout(&m_HLayout);
 }
 
 QString CPatternWidget::GetStringValue(const QString &strValue)

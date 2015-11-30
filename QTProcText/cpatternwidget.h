@@ -6,7 +6,7 @@
 #include "basewidget.h"
 #include <QDoubleSpinBox>
 #include <QComboBox>
-
+#include <QHBoxLayout>
 class CPatternWidget : public BaseWidget
 {
     Q_OBJECT
@@ -27,8 +27,9 @@ private:
     QDoubleSpinBox  m_PhaseSpin;
     QComboBox       m_PatternComb;
     QComboBox       m_WaveComb;
-signals:
+    QHBoxLayout     m_HLayout;
 
+signals:
 public slots:
 
 };

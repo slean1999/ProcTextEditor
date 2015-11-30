@@ -62,10 +62,14 @@ void CColorFrame::SetValueString(xml_document<>& doc,xml_node<>* root)
 		{			
 			colorvalue = colortype->next_sibling();
 			CPatternframe* pPatternframe = new CPatternframe(this);
-			pPatternframe->SetValueString(doc, root);
+			pPatternframe->SetValueString(doc, colorvalue);
 			m_nColorType = false;
+            m_HLayout.addWidget(pPatternframe);
+
 		}
+        setLayout(&m_HLayout);
 	}
+
 }
 
 QString CColorFrame::GetValueString()

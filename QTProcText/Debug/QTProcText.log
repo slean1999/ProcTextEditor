@@ -1,9 +1,46 @@
-﻿生成启动时间为 2015/11/23 21:54:36。
-     1>项目“D:\MyGidCode\ProcTextEditor\QTProcText\QTProcText.vcxproj”在节点 2 上(clean 个目标)。
-     1>_PrepareForClean:
-         正在删除文件“Debug\QTProcText.lastbuildstate”。
-     1>已完成生成项目“D:\MyGidCode\ProcTextEditor\QTProcText\QTProcText.vcxproj”(clean 个目标)的操作。
+﻿生成启动时间为 2015/11/26 14:41:31。
+     1>项目“D:\PorcEditor\QTProcText\QTProcText.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\QTProcText.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         Moc'ing cpatternframe.h...
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /ID:\Qt\Qt5.1.1\5.1.1\msvc2010\include /I.\GeneratedFiles\Debug /ID:\Qt\Qt5.1.1\5.1.1\msvc2010\include\QtCore /ID:\Qt\Qt5.1.1\5.1.1\msvc2010\include\QtGui /ID:\Qt\Qt5.1.1\5.1.1\msvc2010\include\QtWidgets /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\Debug\moc_cpatternframe.cpp ccolorframe.cpp cpatternframe.cpp
+         moc_cpatternframe.cpp
+         ccolorframe.cpp
+         cpatternframe.cpp
+         正在生成代码...
+         所有输出均为最新。
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\PorcEditor\Win32\Debug\\QTProcText.exe" /NOLOGO /LIBPATH:D:\Qt\Qt5.1.1\5.1.1\msvc2010\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\QTProcText.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\PorcEditor\Win32\Debug\QTProcText.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\PorcEditor\Win32\Debug\QTProcText.lib" /MACHINE:X86 Debug\basewidget.obj
+         Debug\ccolorframe.obj
+         Debug\ccolormapwidget.obj
+         Debug\cctrlframe.obj
+         Debug\clayerframe.obj
+         Debug\cpatternframe.obj
+         Debug\cpatternwidget.obj
+         Debug\cpropertywidget.obj
+         Debug\cwarpwidget.obj
+         Debug\moc_basewidget.obj
+         Debug\moc_ccolorframe.obj
+         Debug\moc_cctrlframe.obj
+         Debug\moc_clayerframe.obj
+         Debug\moc_cpatternframe.obj
+         Debug\moc_cpatternwidget.obj
+         Debug\moc_cwarpwidget.obj
+         Debug\moc_qtproctext.obj
+         Debug\qrc_qtproctext.obj
+         Debug\main.obj
+         Debug\qtproctext.obj
+         LINK : 没有找到 D:\PorcEditor\Win32\Debug\\QTProcText.exe 或上一个增量链接没有生成它；正在执行完全链接
+         QTProcText.vcxproj -> D:\PorcEditor\Win32\Debug\QTProcText.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\PorcEditor\Win32\Debug\\QTProcText.exe;#1" /manifest Debug\QTProcText.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\QTProcText.unsuccessfulbuild”。
+         正在对“Debug\QTProcText.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\PorcEditor\QTProcText\QTProcText.vcxproj”(build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.60
+已用时间 00:00:02.58

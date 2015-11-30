@@ -4,6 +4,8 @@
 #include <QObject>
 #include "basewidget.h"
 #include <QVBoxLayout>
+#include <QHBoxLayout>
+
 class CColorFrame : public BaseWidget
 {
     Q_OBJECT
@@ -17,7 +19,7 @@ public:
 private:
     int             m_nColorType;// pattern or color
     /*QDomElement     m_Elecolortype;*/
-    QVBoxLayout     m_VLayout;
+    QHBoxLayout     m_HLayout;
 
 };
 

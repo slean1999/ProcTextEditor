@@ -15,7 +15,7 @@ public:
 	virtual QString GetValueString();
 	virtual void CreateSpinBox();
 private:
-	QVBoxLayout		m_vLayout;
+	QVBoxLayout		m_VLayout;
 };
 
 #endif // CPATTERNFRAME_H

@@ -17,13 +17,13 @@ void CWarpWidget::SetValueString(xml_document<>& doc,xml_node<>* root)
 		{
 			if (strcmp(pSubnode->name(),"warptype") == 0)
 			{
-				_WARP* pWarp = new _WARP;		
-				pAtti = pSubnode->first_attribute();
-				int nIndex = 0;
-				WarpIndex(std::string(pAtti->value()),nIndex,1);
-				pWarp->warpType = (eWarpType)nIndex;
-				ParseXMLToWarpValue(pSubnode,pPattern->type,nIndex,pWarp);
-				pPattern->vWarps.push_back(pWarp);
+// 				_WARP* pWarp = new _WARP;		
+// 				pAtti = pSubnode->first_attribute();
+// 				int nIndex = 0;
+// 				WarpIndex(std::string(pAtti->value()),nIndex,1);
+// 				pWarp->warpType = (eWarpType)nIndex;
+// 				ParseXMLToWarpValue(pSubnode,pPattern->type,nIndex,pWarp);
+// 				pPattern->vWarps.push_back(pWarp);
 			}
 			pSubnode = pSubnode->next_sibling();
 			if (pSubnode == NULL)

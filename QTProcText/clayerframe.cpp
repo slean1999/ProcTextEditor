@@ -26,10 +26,10 @@ void CLayerFrame::SetValueString( xml_document<>& doc,xml_node<>* colorlayer )
 	CPropertyWidget*    pPropertyWidget = new CPropertyWidget(this);
 
 	pColorFrame->SetValueString(doc, colornode);
-	pPropertyWidget->SetValueString(doc, propertynode);
+	//pPropertyWidget->SetValueString(doc, propertynode);
 
 	m_VLayout.addWidget(pColorFrame);
-	m_VLayout.addWidget(pPropertyWidget);
+	//m_VLayout.addWidget(pPropertyWidget);
 	setLayout(&m_VLayout);
 }
 

@@ -5,7 +5,7 @@
 #include <QVBoxLayout>
 #include "inc.h"
 using namespace rapidxml;
-
+// 整个控件界面
 class CCtrlFrame : public QWidget
 {
 

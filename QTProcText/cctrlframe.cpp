@@ -9,7 +9,7 @@ CCtrlFrame::CCtrlFrame(QWidget *parent)
 CCtrlFrame::CCtrlFrame( const QString filename,QWidget *parent )
 	:QWidget(parent)
 {
-
+    create(filename);
 }
 
 CCtrlFrame::~CCtrlFrame()
@@ -57,5 +57,6 @@ bool CCtrlFrame::createLayer( xml_document<>& doc,xml_node<>* root )
 			break;
 		}
 	}
-	return true;
+    setLayout(&m_vLayerLayout);
+    return true;
 }
