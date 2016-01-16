@@ -5,7 +5,7 @@
 #include "basewidget.h"
 #include <QVBoxLayout>
 #include <QHBoxLayout>
-
+// 由patternframe或单色控件组成
 class CColorFrame : public BaseWidget
 {
     Q_OBJECT

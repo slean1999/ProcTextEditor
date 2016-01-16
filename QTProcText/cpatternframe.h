@@ -4,6 +4,7 @@
 #include <QVBoxLayout>
 #include "basewidget.h"
 #include "BaseDef.h"
+// warpwidgetºÍcolormapwidget×é³É
 class CPatternframe : public BaseWidget
 {
 	Q_OBJECT

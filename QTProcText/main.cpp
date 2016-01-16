@@ -8,10 +8,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QFile file("c:/material.xml");
-    file.open(QFile::ReadOnly | QFile::Text);    
-
-    CCtrlFrame ctrlFrame("c:/material.xml", NULL);
+    CCtrlFrame ctrlFrame("stone.xml", NULL);
     //ctrlFrame.create("c:/material.xml");
     ctrlFrame.show();
 

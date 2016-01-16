@@ -4,7 +4,7 @@
 #include <QObject>
 #include "basewidget.h"
 #include <QVBoxLayout>
-
+// 由colorframe和propertywidget组成
 class CLayerFrame : public BaseWidget
 {
     Q_OBJECT
