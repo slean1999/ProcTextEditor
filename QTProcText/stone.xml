@@ -1,0 +1,112 @@
+<material>
+	<layer>
+		<color>
+			<colortype type="pattern"/>
+			<colorvalue>
+				<patterntype type="eMARBLE_PATTERN"/>
+				<patternWaveType type="eTRIANGLE_WAVE"/>
+				<frenqucy value="1.000000"/>
+				<phase value="0.000000"/>
+				<warp>
+					<warptype type="eTRANSFORM_WARP"/>
+					<value matrix="0.9396926208 -0.3420201433 0.0000000000 0.0000000000 0.2020944533 0.5552499470 0.1041889066 0.0000000000 -0.0593911746 -0.1631759112 0.9848077530 0.0000000000 2.3000000000 -4.7000000000 0.0000000000 1.0000000000 " inverse="0.9396926208 0.5613734814 -0.0593911746 0.0000000000 -0.3420201433 1.5423609640 -0.1631759112 0.0000000000 0.0000000000 0.2894136294 0.9848077530 0.0000000000 -3.7687877014 5.9579375236 -0.6303270809 1.0000000000 "/>
+					<warptype type="eCLASSIC_TURB_WARP"/>
+					<value turbX="0.8500000000" turbY="0.8500000000" turbZ="0.8500000000" Lambda="2.0000000000" Octaves="6.0000000000" Omega="0.5000000000"/>
+				</warp>
+				<colormap>
+					<colormap value="0.000000 1.000000 1.000000 1.000000 0.300000 0.000000 "/>
+					<colormap value="0.030000 1.000000 1.000000 1.000000 1.000000 0.000000 "/>
+					<colormap value="0.030000 0.000000 0.000000 0.000000 0.700000 0.000000 "/>
+					<colormap value="0.970000 0.329412 0.329412 0.329412 0.900000 0.000000 "/>
+					<colormap value="0.970000 1.000000 1.000000 1.000000 0.900000 0.000000 "/>
+					<colormap value="1.001000 1.000000 1.000000 1.000000 1.000000 0.000000 "/>
+				</colormap>
+				<vals/>
+			</colorvalue>
+		</color>
+		<property>
+			<diffuse value="0.600000"/>
+			<brillance value="1.000000"/>
+			<specular value="0.000000"/>
+			<roughness value="20.000000"/>
+			<vAmbient value="0.100000 0.100000 0.100000"/>
+			<reflection_Max value="0.000000 0.000000 0.000000"/>
+			<reflection_Min value="0.000000 0.000000 0.000000"/>
+			<reflection_Falloff value="1.000000"/>
+		</property>
+	</layer>
+	<layer>
+		<color>
+			<colortype type="pattern"/>
+			<colorvalue>
+				<patterntype type="eGRANITE_PATTERN"/>
+				<patternWaveType type="eRAMP_WAVE"/>
+				<frenqucy value="1.000000"/>
+				<phase value="0.000000"/>
+				<warp>
+					<warptype type="eTRANSFORM_WARP"/>
+					<value matrix="0.7660444431 0.6427876097 0.0000000000 0.0000000000 -1.2855752194 1.5320888862 0.0000000000 0.0000000000 0.0000000000 0.0000000000 2.0000000000 0.0000000000 2.3000000000 -4.7000000000 0.0000000000 1.0000000000 " inverse="0.7660444431 -0.3213938048 0.0000000000 0.0000000000 0.6427876097 0.3830222216 0.0000000000 0.0000000000 0.0000000000 0.0000000000 0.5000000000 0.0000000000 1.2591995464 2.5394101925 0.0000000000 1.0000000000 "/>
+					<warptype type="eCLASSIC_TURB_WARP"/>
+					<value turbX="0.0000000000" turbY="0.0000000000" turbZ="0.0000000000" Lambda="2.0000000000" Octaves="6.0000000000" Omega="0.5000000000"/>
+				</warp>
+				<colormap>
+					<colormap value="0.000000 1.000000 1.000000 1.000000 0.000000 0.000000 "/>
+					<colormap value="0.070000 1.000000 1.000000 1.000000 0.000000 0.000000 "/>
+					<colormap value="0.200000 0.329412 0.329412 0.329412 0.000000 0.000000 "/>
+					<colormap value="0.300000 1.000000 1.000000 1.000000 0.000000 1.000000 "/>
+					<colormap value="0.700000 1.000000 1.000000 1.000000 0.000000 1.000000 "/>
+					<colormap value="1.000000 0.329412 0.329412 0.329412 0.000000 0.000000 "/>
+				</colormap>
+				<vals/>
+			</colorvalue>
+		</color>
+		<property>
+			<diffuse value="0.600000"/>
+			<brillance value="1.000000"/>
+			<specular value="0.000000"/>
+			<roughness value="20.000000"/>
+			<vAmbient value="0.100000 0.100000 0.100000"/>
+			<reflection_Max value="0.000000 0.000000 0.000000"/>
+			<reflection_Min value="0.000000 0.000000 0.000000"/>
+			<reflection_Falloff value="1.000000"/>
+		</property>
+	</layer>
+	<layer>
+		<color>
+			<colortype type="pattern"/>
+			<colorvalue>
+				<patterntype type="eMARBLE_PATTERN"/>
+				<patternWaveType type="eTRIANGLE_WAVE"/>
+				<frenqucy value="1.000000"/>
+				<phase value="0.000000"/>
+				<warp>
+					<warptype type="eTRANSFORM_WARP"/>
+					<value matrix="0.9958577761 0.8356238926 0.0000000000 0.0000000000 -1.6069690242 1.9151111078 0.0000000000 0.0000000000 0.0000000000 0.0000000000 1.7000000000 0.0000000000 2.3000000000 -4.7000000000 0.0000000000 1.0000000000 " inverse="0.5892649562 -0.2571150439 0.0000000000 0.0000000000 0.4944520075 0.3064177772 0.0000000000 0.0000000000 0.0000000000 0.0000000000 0.5882352941 0.0000000000 0.9686150357 2.0315281540 0.0000000000 1.0000000000 "/>
+					<warptype type="eCLASSIC_TURB_WARP"/>
+					<value turbX="0.7000000000" turbY="0.7000000000" turbZ="0.7000000000" Lambda="2.0000000000" Octaves="6.0000000000" Omega="0.5000000000"/>
+				</warp>
+				<colormap>
+					<colormap value="0.000000 0.686000 0.235000 0.282000 0.000000 0.000000 "/>
+					<colormap value="0.155000 0.686000 0.235000 0.282000 0.000000 0.000000 "/>
+					<colormap value="0.328000 0.494000 0.243000 0.294000 0.000000 0.000000 "/>
+					<colormap value="0.474000 0.769000 0.329000 0.373000 0.000000 0.000000 "/>
+					<colormap value="0.647000 0.769000 0.329000 0.373000 0.000000 0.000000 "/>
+					<colormap value="0.810000 0.686000 0.235000 0.282000 0.000000 0.000000 "/>
+					<colormap value="0.922000 0.792000 0.388000 0.427000 0.000000 0.000000 "/>
+					<colormap value="1.001000 0.686000 0.235000 0.282000 0.000000 0.000000 "/>
+				</colormap>
+				<vals/>
+			</colorvalue>
+		</color>
+		<property>
+			<diffuse value="0.600000"/>
+			<brillance value="1.000000"/>
+			<specular value="0.000000"/>
+			<roughness value="20.000000"/>
+			<vAmbient value="0.100000 0.100000 0.100000"/>
+			<reflection_Max value="0.000000 0.000000 0.000000"/>
+			<reflection_Min value="0.000000 0.000000 0.000000"/>
+			<reflection_Falloff value="1.000000"/>
+		</property>
+	</layer>
+</material>
